@@ -1,0 +1,484 @@
+.card>.list-group {
+    border-top: inherit;
+    border-bottom: inherit
+}
+
+.card>.list-group:first-child {
+    border-top-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.card>.list-group:last-child {
+    border-bottom-width: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.card>.card-header+.list-group,
+.card>.list-group+.card-footer {
+    border-top: 0
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem 1.25rem
+}
+
+.card-title {
+    margin-bottom: .5rem
+}
+
+.card-subtitle {
+    margin-top: -.25rem;
+    margin-bottom: 0
+}
+
+.card-text:last-child {
+    margin-bottom: 0
+}
+
+.card-link:hover {
+    text-decoration: none
+}
+
+.card-link+.card-link {
+    margin-left: 1.25rem
+}
+
+.card-header {
+    padding: .625rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, .03);
+    border-bottom: 0 solid rgba(0, 0, 0, .125)
+}
+
+.card-header:first-child {
+    border-radius: 0
+}
+
+.card-footer {
+    padding: .625rem 1.25rem;
+    background-color: rgba(0, 0, 0, .03);
+    border-top: 0 solid rgba(0, 0, 0, .125)
+}
+
+.card-footer:last-child {
+    border-radius: 0
+}
+
+.card-header-tabs {
+    margin-right: -.625rem;
+    margin-bottom: -.625rem;
+    margin-left: -.625rem;
+    border-bottom: 0
+}
+
+.card-header-pills {
+    margin-right: -.625rem;
+    margin-left: -.625rem
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    border-radius: 0
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+    width: 100%
+}
+
+.card-img,
+.card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.card-img,
+.card-img-bottom {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.card-group>.card {
+    margin-bottom: 15px
+}
+
+@media (min-width:576px) {
+    .card-group {
+        display: flex;
+        flex-flow: row wrap
+    }
+
+    .card-group>.card {
+        flex: 1 0 0%;
+        margin-bottom: 0
+    }
+
+    .card-group>.card+.card {
+        margin-left: 0;
+        border-left: 0
+    }
+
+    .card-group>.card:not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0
+    }
+
+    .card-group>.card:not(:last-child) .card-header,
+    .card-group>.card:not(:last-child) .card-img-top {
+        border-top-right-radius: 0
+    }
+
+    .card-group>.card:not(:last-child) .card-footer,
+    .card-group>.card:not(:last-child) .card-img-bottom {
+        border-bottom-right-radius: 0
+    }
+
+    .card-group>.card:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0
+    }
+
+    .card-group>.card:not(:first-child) .card-header,
+    .card-group>.card:not(:first-child) .card-img-top {
+        border-top-left-radius: 0
+    }
+
+    .card-group>.card:not(:first-child) .card-footer,
+    .card-group>.card:not(:first-child) .card-img-bottom {
+        border-bottom-left-radius: 0
+    }
+}
+
+/* 
+------------------------------
+    : Custom - Cards css :
+------------------------------
+*/
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    /*border-radius: 8px;*/
+    background-color: #ffffff;
+}
+
+.card.border-primary {
+    border: 1px solid;
+}
+
+.card.border-secondary {
+    border: 1px solid;
+}
+
+.card.border-success {
+    border: 1px solid;
+}
+
+.card.border-danger {
+    border: 1px solid;
+}
+
+.card.border-warning {
+    border: 1px solid;
+}
+
+.card.border-info {
+    border: 1px solid;
+}
+
+.card.border-light {
+    border: 1px solid;
+}
+
+.card.border-dark {
+    border: 1px solid;
+}
+
+.card-primary {
+    background-color: #2facff;
+    border-color: #1ba4fd;
+}
+
+.card-secondary {
+    background-color: #b8d1e1;
+    border-color: #b8d1e1;
+}
+
+.card-success {
+    background-color: #3dcd8b;
+    border-color: #3dcd8b;
+}
+
+.card-danger {
+    background-color: #e75c62;
+    border-color: #e75c62;
+}
+
+.card-warning {
+    background-color: #ffb129;
+    border-color: #ffb129;
+}
+
+.card-info {
+    background-color: #67d1e1;
+    border-color: #67d1e1;
+}
+
+.card-light {
+    background-color: #ebebf6;
+    border-color: #ebebf6;
+}
+
+.card-dark {
+    background-color: #181a39;
+    border-color: #181a39;
+}
+
+.card-header {
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+}
+
+.card-header:first-child {
+    border-radius: calc(5px - 1px) calc(5px - 1px) 0 0;
+    padding: 15px 20px;
+}
+
+.card .card-header .card-title {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.card .card-header .row .card-title {
+    font-size: 16px;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #8A98AC;
+    margin-bottom: 15px;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: calc(5px - 1px);
+}
+
+.card-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: transparent;
+}
+
+.card-arrow {
+    background-color: rgba(27, 164, 253, 0.1);
+    color: #1ba4fd;
+    border-radius: 50%;
+    display: flex;
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.card-arrow i {
+    padding: 5px;
+}
+
+.card-arrow:hover {
+    background-color: #1ba4fd;
+    color: #ffffff;
+}
+
+.amount-spent-select .form-control {
+    font-size: 12px;
+    padding: 0px 5px;
+    line-height: 24px;
+    height: 24px;
+}
+
+.card-statistics .nav-pills {
+    float: right;
+}
+
+.card-statistics .nav-pills .nav-link {
+    padding: 0 6px 16px 6px;
+    margin-bottom: -16px;
+    font-size: 14px;
+}
+
+.card-statistics .nav-pills .nav-link.active {
+    color: #1ba4fd;
+    background-color: transparent;
+    border-bottom: 2px solid #1ba4fd;
+    border-radius: 0;
+}
+
+.card-statistics .nav-tabs {
+    float: right;
+}
+
+
+/* -- Background color -- */
+.bg-primary {
+    background-color: #1ba4fd !important;
+}
+
+.bg-secondary {
+    background-color: #b8d1e1 !important;
+}
+
+.bg-success {
+    background-color: #3dcd8b !important;
+}
+
+.bg-danger {
+    background-color: #e75c62 !important;
+}
+
+.bg-warning {
+    background-color: #ffb129 !important;
+}
+
+.bg-info {
+    background-color: #67d1e1 !important;
+}
+
+.bg-light {
+    background-color: #ebebf6 !important;
+}
+
+.bg-dark {
+    background-color: #181a39 !important;
+}
+
+.bg-muted {
+    background-color: #8A98AC !important;
+}
+
+.bg-white {
+    background-color: #ffffff !important;
+}
+
+/* -- Background color rgba -- */
+.bg-primary-rgba {
+    background-color: rgba(27, 164, 253, 0.1) !important;
+}
+
+.bg-secondary-rgba {
+    background-color: rgba(184, 209, 225, 0.1) !important;
+}
+
+.bg-success-rgba {
+    background-color: rgba(61, 205, 139, 0.1) !important;
+}
+
+.bg-danger-rgba {
+    background-color: rgba(231, 92, 98, 0.1) !important;
+}
+
+.bg-warning-rgba {
+    background-color: rgba(255, 177, 41, 0.1) !important;
+}
+
+.bg-info-rgba {
+    background-color: rgba(103, 209, 225, 0.1) !important;
+}
+
+.bg-light-rgba {
+    background-color: rgba(235, 235, 246, 0.1) !important;
+}
+
+.bg-dark-rgba {
+    background-color: rgba(24, 26, 57, 0.1) !important;
+}
+
+.d-flex {
+    display: flex !important
+}
+
+.mr-2,
+.mx-2 {
+    margin-right: .5rem !important
+}
+
+/*----------------*/
+.align-self-auto {
+    align-self: auto !important
+}
+
+.align-self-start {
+    align-self: flex-start !important
+}
+
+.align-self-end {
+    align-self: flex-end !important
+}
+
+.align-self-center {
+    align-self: center !important
+}
+
+.align-self-baseline {
+    align-self: baseline !important
+}
+
+.align-self-stretch {
+    align-self: stretch !important
+}
+
+/*---------------------*/
+.me-3 {
+    margin-right: 1rem !important
+}
+
+.lstick {
+    margin-left: -16px
+}
+
+.lstick {
+    margin-right: -20px;
+    margin-left: 18px
+}
+
+.lstick {
+    width: 2px;
+    background: #186dde;
+    height: 30px;
+    margin-left: -20px;
+    margin-right: 18px
+}
+
+/*---------------*/
+.d-inline-block {
+    display: inline-block !important
+}
+
+.d-block {
+    display: block !important
+}
+
+/*------*/
+.align-middle {
+    vertical-align: middle !important
+}
+
+/*---------------------*/
+.text-muted {
+    color: #99abb4 !important
+}
+
+.mt-2 {
+    margin-top: .5rem !important
+}
+
+.mb-0 {
+    margin-bottom: 0 !important
+}
